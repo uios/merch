@@ -1,0 +1,503 @@
+/*ALIGN ITEMS*/
+@media screen {
+    .align-items-center {
+        align-items: center;
+    }
+
+    .align-items-flex-end {
+        align-items: flex-end;
+    }
+
+    @media (max-width: 960px) {
+        .-dw960px-align-items-center {
+            align-items: center;
+        }
+    }
+}
+
+/*Blur*/
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    [data-backdrop-blur="10px"] {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    [data-backdrop-blur] {
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    [data-theme="dark"] [data-backdrop-blur] {
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+/*BACKGROUND COLOR*/
+@media screen {
+    .background-none {
+        background: none;
+    }
+
+    .background-color-fff {
+        background-color: #fff;
+    }
+
+    .background-color-ce0000 {
+        background-color: #ce0000
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body[data-theme="system"] .-dark-background-color-1f {
+            background-color: #1f1f1f;
+        }
+
+        @media (max-width: 768px) {
+            body[data-theme="system"] .-dark-tablet-background-color-2e {
+                background-color: #2e2e2e;
+            }
+        }
+    }
+}
+
+/*BORDER*/
+@media screen {
+    .border-bottom-1px-solid {
+        border-bottom: 1px solid;
+    }
+
+    .border-left-1px-solid {
+        border-left: 1px solid;
+    }
+
+    .border-right-1px-solid {
+        border-right: 1px solid;
+    }
+
+    .border-top-1px-solid {
+        border-top: 1px solid;
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-border-top-1px-solid {
+            border-top: 1px solid;
+        }
+    }
+}
+
+/*BORDER COLOR*/
+@media screen {
+    .border-color-eff3f4 {
+        border-color: #eff3f4;
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-border-color-eff3f4 {
+            border-color: #eff3f4;
+        }
+    }
+}
+
+/*BORDER RADIUS*/
+@media screen {
+    .border-radius-50pct {
+        border-radius: 50%;
+    }
+
+    .border-radius-5px {
+        border-radius: 5px;
+    }
+
+    .border-radius-20px {
+        border-radius: 20px;
+    }
+
+    .border-radius-50px {
+        border-radius: 50px;
+    }
+}
+
+/*BOTTOM*/
+@media screen {
+    .bottom-0 {
+        bottom: 0;
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-bottom-0 {
+            bottom: 0;
+        }
+
+        .-mobile-bottom-50px {
+            bottom: 50px;
+        }
+
+        .-mobile-right-0 {
+            right: 0;
+        }
+    }
+}
+
+/*COLOR*/
+@media screen {
+    .color-000 {
+        color: #000;
+    }
+
+    .color-fff {
+        color: #fff;
+    }
+}
+
+/*DISPLAY*/
+@media screen {
+    .display-flex {
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    @media (max-width: 1280px) {
+        .-sxga-display-flex {
+            display: flex;
+        }
+
+        .-sxga-display-none {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .-xga-display-none {
+            display: none;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-display-none {
+            display: none;
+        }
+    }
+}
+
+/*FLEX*/
+@media screen {
+    .flex-1 {
+        flex: 1;
+    }
+}
+
+/*FLEX WRAP*/
+@media screen {
+    .flex-direction-column {
+        flex-direction: column;
+    }
+
+    .flex-direction-row {
+        flex-direction: row;
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-flex-direction-row {
+            flex-direction: row;
+        }
+    }
+}
+
+/*FLEX WRAP*/
+@media screen {
+    .flex-wrap-wrap {
+        flex-wrap: wrap;
+    }
+}
+
+/*FONT SIZE*/
+@media screen {
+    .font-size-0 {
+        font-size: 0;
+    }
+
+    .font-size-16px {
+        font-size: 16px;
+    }
+}
+
+/*FONT WEIGHT*/
+@media screen {
+    .font-weight-bolder {
+        font-weight: bolder;
+    }
+}
+
+/*HEIGHT*/
+@media screen {
+    .height-40px, [data-height="40px"] {
+        height: 40px;
+    }
+    
+    .height-50px {
+        height: 50px;
+    }
+
+    .height-60px {
+        height: 60px;
+    }
+
+    @media (max-width: 768px) {
+        .-tablet-height-100pct, [data-tablet-height="100%"] {
+            height: 100%;
+        }
+
+        .-tablet-height-auto, [data-tablet-height="auto"] {
+            height: auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-height-50px {
+            height: 50px;
+        }
+    }
+}
+
+/*JUSTIFY CONTENT*/
+@media screen {
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .justify-content-flex-end {
+        justify-content: flex-end;
+    }
+
+    .justify-content-space-around {
+        justify-content: space-around;
+    }
+
+    .justify-content-space-between {
+        justify-content: space-between;
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-justify-content-space-around {
+            justify-content: space-around;
+        }
+
+        .-mobile-justify-content-space-between {
+            justify-content: space-between;
+        }
+    }
+}
+
+/*LINE HEIGHT*/
+@media screen {
+    .line-height-40px {
+        line-height: 40px;    
+    }
+    
+    .line-height-50px {
+        line-height: 50px;
+    }
+}
+
+/*MARGIN*/
+@media screen {
+    .margin-auto {
+        margin: auto;
+    }
+
+    .margin-5px {
+        margin: 5px;
+    }
+
+    .margin-20px {
+        margin: 20px;
+    }
+
+    .margin-left-20px {
+        margin-left: 20px;
+    }
+
+    .margin-right-20px {
+        margin-right: 20px;
+    }
+
+    .margin-x-10px {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .margin-x-20px {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .margin-y-5px {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+        .-tablet-margin-left-10px {
+            margin-left: 10px;
+        }
+
+        .-tablet-margin-right-10px {
+            margin-right: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-margin-auto {
+            margin: auto;
+        }
+
+        .-mobile-margin-20px {
+            margin: 20px;
+        }
+    }
+}
+
+/*MAX WIDTH*/
+@media screen {
+    @media (max-width: 1280px) {
+        .-sxga-max-width-100pct-minus-90px {
+            max-width: calc(100% - 90px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-max-width-100pct {
+            max-width: 100%;
+        }
+    }
+}
+
+/*OVERFLOW*/
+@media screen {
+    .overflow-hidden {
+        overflow: hidden;
+    }
+
+    .overflow-x-hidden {
+        overflow-x: hidden;
+    }
+
+    .overflow-y-hidden {
+        overflow-y: hidden;
+    }
+}
+
+/*PADDING*/
+@media screen {
+    .padding-20px {
+        padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .-tablet-padding-0 {
+            padding: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-padding-10px {
+            padding: 10px;
+        }
+
+        .-mobile-padding-20px {
+            padding: 20px;
+        }
+    }
+}
+
+/*POSITION*/
+@media screen {
+    .position-absolute {
+        position: absolute;
+    }
+
+    .position-fixed {
+        position: fixed;
+    }
+
+    .position-relative {
+        position: relative;
+    }
+
+    @media (max-width: 768px) {
+        .-tablet-position-fixed {
+            position: fixed;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-position-fixed {
+            position: fixed;
+        }
+    }
+}
+
+/*TEXT ALIGN*/
+@media screen {
+    .text-align-center {
+        text-align: center;
+    }
+}
+
+/*OVERFLOW*/
+@media screen {
+    .text-overflow-ellipsis {
+        text-overflow: ellipsis;
+    }
+}
+
+/*TOP*/
+@media screen {
+    .top-0 {
+        top: 0;
+    }
+}
+
+/*WIDTH*/
+@media screen {
+    .width-100pct {
+        width: 100%;
+    }
+
+    .width-40px, [data-width="40px"] {
+        width: 40px;
+    }
+
+    .width-190px {
+        width: 190px;
+    }
+
+    .width-240px {
+        width: 240px;
+    }
+
+    .width-360px {
+        width: 360px;
+    }
+
+    .width-600px {
+        width: 600px;
+    }
+
+    @media (max-width: 480px) {
+        .-mobile-width-100pct {
+            width: 100%;
+        }
+    }
+}
+
+/*Z-INDEX*/
+@media screen {
+    .z-index-5 {
+        z-index: 12345;
+    }
+}

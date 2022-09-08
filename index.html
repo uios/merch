@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Merch &#8226;&#160;uiOS</title>
+        <meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0'>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+        <meta name='apple-mobile-web-app-capable' content='yes'>
+        <meta name='apple-mobile-web-app-status-bar-style' content='#021025'>
+        <meta name="apple-mobile-web-app-title" content="Merch">
+        <meta name="application-name" content="Merch">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name='theme-color' content='#021025'>
+        <script>
+            var domains = window.location.host.split('.');
+            window.globals = {
+                domains: {
+                    domain: domains.length > 1 ? domains[domains.length - 2] : null,
+                    subdomain: domains.length > 2 ? domains[domains.length - 3] : null,
+                    tld: domains[domains.length - 1]
+                }
+            }
+            const base = document.createElement("base");
+            base.href = (globals.domains.domain === "github" ? "/merch" : "") + "/";
+            document.head.appendChild(base);
+        </script>
+        <link href="index.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/all.css" rel="stylesheet">
+        <link href="cdn/css/boiler.css" rel="stylesheet">
+        <script id="firebase-app" src="cdn/js/firebase-app.js"></script>
+        <script id="firebase-auth" src="cdn/js/firebase-auth.js"></script>
+        <script id="script-vanilla" src="cdn/js/vanilla.js"></script>
+        <script id="script-auth" src="cdn/js/auth.js"></script>
+        <script id="script-mvc" src="cdn/js/mvc.js"></script>
+        <script id="script-on" src="cdn/js/on.js"></script>
+        <script id="script-modal" src="cdn/js/modal.js"></script>
+        <script id="script-router" src="cdn/js/router.js"></script>
+        <script id="script-touch" src="cdn/js/touch.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body data-load="ing">
+        <boot class="boot" id="boot">
+            <div class="bouncing bounce1 bg-r"></div>
+            <div class="bouncing bounce2 bg-g"></div>
+            <div class="bouncing bounce3 bg-b"></div>
+        </boot>
+        <header class="align-items-center background-color-ce0000 height-60px">
+            <section>
+                <card>
+                    <form class="background-color-fff border-radius-5px display-flex flex-direction-row height-40px margin-x-10px">
+                        <box class="border-right-1px-solid">
+                            <section>
+                                <text class="line-height-40px" data-before="All" data-after="&#x25BC;"></text>
+                            </section>
+                            <section></section>
+                        </box>
+                        <box class="flex-1">
+                            <section>
+                                <input class="line-height-40px" placeholder="Search Merch" type="text">
+                            </section>
+                        </box>
+                        <box>
+                            <ico>
+                                <n class="gg-search"></n>
+                            </ico>
+                        </box>
+                    </form>
+                </card>
+            </section>
+        </header>
+        <main>
+            <page data-fetch="/cdn/html/page/page.index.html" data-page="/"></page>
+        </main>
+    </body>
+</html>
